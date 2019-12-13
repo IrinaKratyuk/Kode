@@ -14,12 +14,20 @@ namespace Test
 
         private void button1_Click(object sender, EventArgs e)
         {
+            if(textBox1.Text=="")
+            {
+                MessageBox.Show("Неккоректно введено чило");
+            }
             a = Convert.ToDouble(textBox1.Text);
             textBox1.Text = "";
             op = 1;
         }
         private void button2_Click(object sender, EventArgs e)
         {
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("Неккоректно введено чило");
+            }
             a = Convert.ToDouble(textBox1.Text);
             textBox1.Text = "";
             op = 2;
@@ -27,6 +35,10 @@ namespace Test
 
         private void button3_Click(object sender, EventArgs e)
         {
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("Неккоректно введено чило");
+            }
             a = Convert.ToDouble(textBox1.Text);
             textBox1.Text = "";
             op =3;
@@ -35,6 +47,10 @@ namespace Test
 
         private void button4_Click(object sender, EventArgs e)
         {
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("Неккоректно введено чило");
+            }
             a = Convert.ToDouble(textBox1.Text);
             textBox1.Text = "";
             op = 4;
