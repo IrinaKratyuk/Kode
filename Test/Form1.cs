@@ -8,6 +8,7 @@ namespace Test
         int ldkskflskn;
         double a, b;
         int op = 0;
+        DialogResult res;
         public Form1()
         {
             InitializeComponent();
@@ -63,6 +64,16 @@ namespace Test
         {
             textBox1.Text = "";
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+           res = MessageBox.Show("Закрыти приложение?","Сообщение", MessageBoxButtons.OKCancel);
+           if(res==DialogResult.Cancel)
+            { 
+                e.Cancel = true;
+            }
+        }
+
         private void button5_Click(object sender, EventArgs e)
         {
             b = Convert.ToDouble(textBox1.Text);
