@@ -5,6 +5,7 @@ namespace Test
 {
     public partial class Form1 : Form
     {
+        int ldkskfls;
         double a, b;
         int op = 0;
         public Form1()
