@@ -60,6 +60,11 @@ namespace Test
                     textBox1.Text = Convert.ToString(a * b);
                     break;
                 case 4:
+                    if(b==0)
+                    {
+                        MessageBox.Show("Деление на 0!!!");
+                        break;
+                    }
                     textBox1.Text = Convert.ToString(a / b);
                     break;
             }
