@@ -11,6 +11,7 @@ namespace Test
         public Form1()
         {
             InitializeComponent();
+            MessageBox.Show("Ну здарова");
         }
 
         private void button1_Click(object sender, EventArgs e)
